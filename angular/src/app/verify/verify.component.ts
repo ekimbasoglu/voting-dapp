@@ -43,15 +43,6 @@ export class VerifyComponent implements OnInit {
       }
     );
   }
-
-  verifyVoting() {
-    // Logic here
-    // // this.votingService.verifyVoting().subscribe(
-
-    // if its true
-    this.router.navigate(['/stepvote']);
-  }
-
   cancelVoting() {
     this.votingService.cancelVoting().subscribe(
       (data) => {
@@ -66,5 +57,9 @@ export class VerifyComponent implements OnInit {
         this.router.navigate(['/']);
       }
     );
+  }
+
+  startVoting() {
+    // Logic here
   }
 }
