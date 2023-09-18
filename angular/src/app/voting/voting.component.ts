@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { VotingService } from '../services/votingService';
 import { SmartContractService } from '../services/smartContractService';
+import Web3 from 'web3';
 
 @Component({
   selector: 'app-voting',
@@ -46,9 +47,8 @@ export class VotingComponent {
   async vote(partyId: string) {
     var ok = true;
 
-    const senderAddress = '0xYourSenderAddress'; // Replace with your Ethereum address
     try {
-      await this.smartContractService.vote(partyId, senderAddress);
+      await this.smartContractService.vote(partyId);
       // Handle success
     } catch (error) {
       // Handle error
