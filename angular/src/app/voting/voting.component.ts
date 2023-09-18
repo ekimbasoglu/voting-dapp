@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { VotingService } from '../services/votingService';
+import { SmartContractService } from '../services/smartContractService';
 
 @Component({
   selector: 'app-voting',
@@ -36,14 +37,22 @@ export class VotingComponent {
     },
   ];
 
-  constructor(private router: Router, private votingService: VotingService) {}
+  constructor(
+    private router: Router,
+    private votingService: VotingService,
+    private smartContractService: SmartContractService
+  ) {}
 
-  vote(partyId: string) {
+  async vote(partyId: string) {
     var ok = true;
 
-    // logic here
-    // make request to voting service
-    // this.votingService.vote(candidateId).subscribe(
+    const senderAddress = '0xYourSenderAddress'; // Replace with your Ethereum address
+    try {
+      await this.smartContractService.vote(partyId, senderAddress);
+      // Handle success
+    } catch (error) {
+      // Handle error
+    }
 
     // return to voting accepted page
     if (ok == true) {
