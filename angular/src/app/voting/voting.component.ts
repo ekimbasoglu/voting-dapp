@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { VotingService } from '../services/votingService';
+import { SmartContractService } from '../services/smartContractService';
 
 @Component({
   selector: 'app-voting',
@@ -10,40 +11,47 @@ import { VotingService } from '../services/votingService';
 export class VotingComponent {
   candidateInfos: any = [
     {
-      id: 'akp',
+      id: 0,
       name: 'AKP - Adalet ve Kalkınma Parti',
       image: 'assets/images/akp.svg',
     },
     {
-      id: 'chp',
+      id: 1,
       name: 'CHP - Cumhuriyet Halk Partisi',
       image: 'assets/images/chp.svg',
     },
     {
-      id: 'iyi',
+      id: 2,
       name: 'İYİ Parti',
       image: 'assets/images/iyi.svg',
     },
     {
-      id: 'mhp',
+      id: 3,
       name: 'MHP - Milliyetçi Hareket Partisi',
       image: 'assets/images/mhp.svg',
     },
     {
-      id: 'hdp',
+      id: 4,
       name: 'HDP - Halkların Demokratik Partisi',
-      image: 'assets/images/hdp.png',
+      image: 'assets/images/hdp.jpg',
     },
   ];
 
-  constructor(private router: Router, private votingService: VotingService) {}
+  constructor(
+    private router: Router,
+    private votingService: VotingService,
+    private smartContractService: SmartContractService
+  ) {}
 
-  vote(partyId: string) {
+  async vote(partyId: number) {
     var ok = true;
 
-    // logic here
-    // make request to voting service
-    // this.votingService.vote(candidateId).subscribe(
+    try {
+      await this.smartContractService.vote(partyId);
+      // Handle success
+    } catch (error) {
+      // Handle error
+    }
 
     // return to voting accepted page
     if (ok == true) {
@@ -68,4 +76,6 @@ export class VotingComponent {
       }
     );
   }
+
+  showMethods() {}
 }
