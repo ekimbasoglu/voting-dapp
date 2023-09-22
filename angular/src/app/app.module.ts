@@ -14,9 +14,10 @@ import { VotedComponent } from './voted/voted.component';
 import { DeniedComponent } from './denied/denied.component';
 import { ContactComponent } from './contact/contact.component';
 import { FlowComponent } from './flow/flow.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, NavComponent, FooterComponent, VerifyComponent, VotingComponent, VotedComponent, DeniedComponent, ContactComponent, FlowComponent],
+  declarations: [AppComponent, HomeComponent, NavComponent, FooterComponent, VerifyComponent, VotingComponent, VotedComponent, DeniedComponent, ContactComponent, FlowComponent, DashboardComponent],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
