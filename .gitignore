@@ -128,3 +128,4 @@ dist
 build/.DS_Store
 .DS_Store
 .DS_Store
+build/contracts/Election.json

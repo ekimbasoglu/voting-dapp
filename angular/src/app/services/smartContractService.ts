@@ -26,10 +26,9 @@ export class SmartContractService {
   }
 
   // TODO: Implement this function
-  async vote(partyId: string): Promise<void> {
+  async vote(partyId: number): Promise<void> {
     try {
       const senderAddress = this.generateRandomAddress();
-      // const accounts = await this.web3.eth.getAccounts();
 
       // Send the vote transaction
       const result = await this.contract.methods
