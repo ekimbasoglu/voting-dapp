@@ -33,7 +33,7 @@ export class VotingComponent {
     {
       id: 4,
       name: 'HDP - Halkların Demokratik Partisi',
-      image: 'assets/images/hdp.png',
+      image: 'assets/images/hdp.jpg',
     },
   ];
 
@@ -77,7 +77,5 @@ export class VotingComponent {
     );
   }
 
-  showMethods() {
-    
-  }
+  showMethods() {}
 }
