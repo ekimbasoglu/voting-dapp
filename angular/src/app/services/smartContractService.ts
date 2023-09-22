@@ -19,21 +19,17 @@ export class SmartContractService {
     this.contract = new this.web3.eth.Contract(CONTRACT_ABI, CONTRACT_ADDRESS);
   }
 
-  // Function to generate a random Ethereum address
-  generateRandomAddress(): string {
-    const randomAddress = this.web3.utils.randomHex(20); // Generate random 20-byte (40-character) hex string
-    return this.web3.utils.toChecksumAddress(randomAddress); // Convert to a valid Ethereum address format
-  }
-
-  // TODO: Implement this function
   async vote(partyId: number): Promise<void> {
     try {
-      const senderAddress = this.generateRandomAddress();
+      // Get generated accounts from Ganache, MetaMask, etc.
+      const accounts = await this.web3.eth.getAccounts();
+      // Because I'm using Ganache, chose the account randomly
+      const account = accounts[Math.floor(Math.random() * accounts.length)]; // object represents for accounts addressId
 
       // Send the vote transaction
       const result = await this.contract.methods
         .vote(partyId)
-        .send({ from: senderAddress });
+        .send({ from: account });
 
       console.log('Transaction Receipt:', result);
     } catch (error) {
