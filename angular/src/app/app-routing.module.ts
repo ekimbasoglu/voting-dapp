@@ -7,6 +7,7 @@ import { VotedComponent } from './voted/voted.component';
 import { DeniedComponent } from './denied/denied.component';
 import { ContactComponent } from './contact/contact.component';
 import { FlowComponent } from './flow/flow.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -33,6 +34,10 @@ const routes: Routes = [
   {
     path: 'flow',
     component: FlowComponent,
+  },
+  {
+    path: 'dashboard',
+    component: DashboardComponent,
   },
 ];
 

@@ -1,0 +1,24 @@
+{
+  "Title": "Local Elections",
+  "voteMessage": "Vote!",
+  "mainVoteMessage": "The blockchain technology-backed voting process ensures the transparency and reliability of democratic processes, transforming the voting experience for participants. This system, which represents the future of voting, allows every citizen to preserve the value of their vote and actively participate in democratic processes, while ensuring the secure recording of data and preventing manipulation. With blockchain-based voting, which offers unique security and transparency, we are adding a new dimension to democracy.",
+  "name": "Name",
+  "surname": "Surname",
+  "identityNumber": "Identity Number",
+  "secret": "The last 2 letters of mother's maiden name",
+  "voteButton": "vote",
+
+  "citizenData": "Citizen Data",
+  "nameSurname": "Name Surname:",
+  "idNumber": "Identity Number:",
+  "cityCounty": "City/County:",
+  "validInfo": "If this information is correct, press the proceed button. If the information is incorrect, press the cancel button.",
+  "readyVote": "Are you ready for voting?",
+  "warningMessage": "Please read carefully before voting in this system, which will be tried for the first time! You will never be able to return to this screen again. After pressing the Proceed button, you have a total of 5 minutes to vote. If you do not vote within 5 minutes, your voting will be automatically canceled. You can cancel your vote with the cancel button. Please read this text carefully.",
+  "cancelVote": "Cancel my vote",
+  "proceedVote": "Proceed with voting",
+  "chosenCandidate": "Chosen Candidate",
+
+  "successVoting": "Your vote has been successfully registered. We thank you",
+  "exit": "Exit"
+}

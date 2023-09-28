@@ -1,0 +1,24 @@
+{
+  "Title": "Yerel Seçimler",
+  "voteMessage": "Oy ver!",
+  "mainVoteMessage": "Blockchain teknolojisi ile güvence altına alınmış oy verme işlemi, demokratik süreçlerin şeffaflığını ve güvenilirliğini artırarak katılımcıların oy kullanma deneyimini dönüştürüyor. Geleceğin oy verme yöntemi olan bu sistem, her vatandaşın oyunun değerini korumasına ve demokratik süreçlere aktif katılımına olanak tanırken, verilerin güvenli bir şekilde kaydedilmesini ve manipülasyonun önlenmesini sağlar. Eşsiz güvenlik ve şeffaflık sunan blockchain tabanlı oy verme sayesinde, demokrasiye yeni bir boyut kazandırıyoruz.",
+  "name": "İsim",
+  "surname": "Soyisim",
+  "identityNumber": "TC Kimlik Numarası",
+  "secret": "Annenizin kızlık soyadının son 2 harfleri",
+  "voteButton": "oy·ver",
+
+  "citizenData": "Vatandaşlık verileri;",
+  "nameSurname": "İsmi soyismi:",
+  "idNumber": "T.C. Kimlik numarası:",
+  "cityCounty": "İl ve posta kodu:",
+  "validInfo": "Eğer bu bilgiler doğru ise ilerle butonuna basınız. Eğer bilgiler yanlış ise iptal butonuna basınız.",
+  "readyVote": "Oy vermeye hazır mısın?",
+  "warningMessage": "İlk defa denencek olan bu sistemde oy kullanmadan önce dikkatli okuyunuz! Bu ekrana bir daha geri dönüş yapamayacaksınız. İlerle butonuna bastıktan sonra oy vermek için toplam 5 dakikanız var, eğer 5 dakika içerisinde oy vermezseniz otomatik olarak oy verme işlemi iptal edilecektir. İptal butonu ile oy verme işlemini iptal edebilirsiniz. Lütfen bu metni dikkatlice okuyunuz.",
+  "cancelVote": "Oyumu iptal et",
+  "proceedVote": "Oy vermeye devam et",
+  "chosenCandidate": "Oyunu vermek için bir parti adayı seçin",
+
+  "successVoting": "Oyunuz başarıyla kaydedildi. Teşekkür ederiz.",
+  "exit": "Çıkış yap"
+}

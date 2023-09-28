@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-nav',
@@ -8,7 +9,13 @@ import { Router } from '@angular/router';
 })
 export class NavComponent implements OnInit {
   votingStarted: boolean = false;
-  constructor(private router: Router) {}
+  locale: boolean = true; // true for default
+
+  constructor(private router: Router, public translate: TranslateService) {
+    translate.addLangs(['en', 'tr']);
+    translate.setDefaultLang('tr');
+  }
+
   ngOnInit(): void {
     // generate a if that checks its not the home page enable votingStarted
     if (this.router.url === '/' || this.router.url.startsWith('/?')) {
@@ -16,5 +23,10 @@ export class NavComponent implements OnInit {
     } else {
       this.votingStarted = false;
     }
+  }
+
+  switchLanguage() {
+    this.locale = !this.locale; // Switch the locale
+    this.locale !== true ? this.translate.use('en') : this.translate.use('tr');
   }
 }

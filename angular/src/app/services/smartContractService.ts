@@ -37,4 +37,18 @@ export class SmartContractService {
       throw error;
     }
   }
+
+  // Generate a fucntion to show getTotalVotes
+  async getTotalVotes(partId: number): Promise<number> {
+    try {
+      // get total votes
+      const totalNumber = await this.contract.methods.getTotalVotes(2).call();
+      console.log('Total Votes:', totalNumber);
+      alert(totalNumber);
+      return totalNumber;
+    } catch (error) {
+      console.error('Error:', error);
+      throw error;
+    }
+  }
 }

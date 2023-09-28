@@ -6,7 +6,7 @@
       </p>
     </div>
     <h2 class="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
-      Oyunu vermek için bir parti adayı seçin
+      {{'chosenCandidate' | translate}}
     </h2>
   </div>
   <div class="grid max-w-md gap-10 row-gap-8 lg:max-w-screen-lg sm:row-gap-10 lg:grid-cols-5 xl:max-w-screen-lg sm:mx-auto">
@@ -20,14 +20,14 @@
       <div class="flex flex-col justify-between flex-grow p-8 border border-t-0 rounded-b">
         <div class="text-lg font-semibold">{{party.name}}</div>
         <button href="/" class="inline-flex items-center mt-5 justify-center w-full h-12 px-6 font-medium tracking-wide text-black transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
-        (click)="vote(party.id)"> Oy ver! </button>
+        (click)="vote(party.id)"> {{'vote' | translate}} </button>
       </div>
     </div>
   </div>
   <div class="flex justify-center items-center gap-11 max-w-l my-7">
     <button class="py-2.5 px-6 rounded-lg text-sm font-medium bg-red-700 text-white"
     (click)="cancelVoting()"
-    >Oyumu iptal et</button>
+    >{{'cancelVote' | translate}}</button>
   </div>
 
 
