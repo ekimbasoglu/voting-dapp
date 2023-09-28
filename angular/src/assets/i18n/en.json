@@ -20,5 +20,6 @@
   "chosenCandidate": "Chosen Candidate",
 
   "successVoting": "Your vote has been successfully registered. We thank you",
-  "exit": "Exit"
+  "exit": "Exit",
+  "invalidVoting": "Your vote considered invalid."
 }

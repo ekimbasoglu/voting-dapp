@@ -20,5 +20,6 @@
   "chosenCandidate": "Oyunu vermek için bir parti adayı seçin",
 
   "successVoting": "Oyunuz başarıyla kaydedildi. Teşekkür ederiz.",
-  "exit": "Çıkış yap"
+  "exit": "Çıkış yap",
+  "invalidVoting": "Oyunuz geçersiz sayıldı."
 }
